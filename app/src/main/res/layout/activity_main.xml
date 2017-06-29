@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:padding="16dp"
+    tools:context="com.am.butterknife.MainActivity">
+    <!--DUSAMOS IN REALTIVE LAYOUT COMO CONTENEDOR PADRE
+    CON LAS PROPIEDADES PADDING Y BACKGROUND-->
+
+    <Button
+        android:id="@+id/btnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Button" />
+    <!--UN BUTTON AL CUAL CENTRAMOS Y PONEMOS UN ID-->
+
+    <ToggleButton
+        android:id="@+id/tbtnToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true" />
+    <!--UN TOGLEBUTTON AL CUAL PONEMOS EN LA POSICION IZQUIERDA-->
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/rbtnRadio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio 1" />
+
+        <RadioButton
+            android:id="@+id/rbtnRadio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio 2" />
+    </RadioGroup>
+    <!--UN RADIOGROUP EL CUAL CONTIENE DOS RADIO BUTTON
+        Y LO PONEMOS A LA DERECHA-->
+
+    <Switch
+        android:id="@+id/swtSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Switch" />
+    <!--UN SWITCH AL QUE PONEOS EN LA PARTE SUPERIOR-->
+
+    <CheckBox
+        android:id="@+id/chkCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="CheckBox" />
+    <!--UN CHECKBOX QUE PONEMOS EN LA PARTE INFERIOR-->
+</RelativeLayout>
